@@ -9,15 +9,15 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors());
+// app.use(cors());
 
-// app.use(cors(
-//     {
-//         origin: 'http://localhost:5500',
-//         methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//         allowedHeaders: ['Content-type'],
-//     }
-// ));
+app.use(cors(
+    {
+        origin: 'https://my-portfolio-frontend-theta.vercel.app/',
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        allowedHeaders: ['Content-type'],
+    }
+));
 
 app.use('/', blogRoutes);
 
