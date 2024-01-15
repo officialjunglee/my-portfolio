@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(cors(
     {
-        origin: 'https://my-portfolio-frontend-theta.vercel.app',
+        origin: 'https://atishay-khanna.vercel.app',
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-type'],
     }
