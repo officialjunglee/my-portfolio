@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('http://localhost:5500/blogs')
+      .get('http://my-portfolio-backend-kohl.vercel.app/blogs')
       .then((response) => {
         setBlogs(response.data);
         console.log(response.data);
