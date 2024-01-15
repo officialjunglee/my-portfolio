@@ -19,7 +19,7 @@ const CreateBlog = () => {
         };
         setLoading(true);
         axios
-            .post('https://atishay-khanna.vercel.app/createblog', data)
+            .post('https://my-portfolio-backend-kohl.vercel.app/createblog', data)
             .then(() => {
                 setLoading(false);
                 enqueueSnackbar('Book Created successfully', { variant: 'success' });
