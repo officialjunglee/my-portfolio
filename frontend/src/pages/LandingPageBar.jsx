@@ -111,7 +111,7 @@ export default function LandingPageBar() {
                         <a href="https://www.linkedin.com/in/atishay-khanna/" className="text-sm  leading-6 text-gray-900 hover:text-slate-600" target="_blank" rel="noreferrer noopener">
                             <GrLinkedinOption size={24} />
                         </a>
-                        <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-slate-600" >
+                        <a href="/blogs" className="text-sm font-semibold leading-6 text-gray-900 hover:text-slate-600" >
                             <FaBlog size={24} />
                         </a>
                     </Popover.Group>
@@ -145,7 +145,7 @@ export default function LandingPageBar() {
                         <div className="mt-6 flow-root">
                             <div className="-my-6 divide-y divide-gray-500/10">
                                 <div className="space-y-2 py-6">
-                                    <Disclosure as="div" className="-mx-3">
+                                    {/* <Disclosure as="div" className="-mx-3">
                                         {({ open }) => (
                                             <>
                                                 <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -169,34 +169,34 @@ export default function LandingPageBar() {
                                                 </Disclosure.Panel>
                                             </>
                                         )}
-                                    </Disclosure>
+                                    </Disclosure> */}
                                     <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        href="https://github.com/officialjunglee"
+                                        className="flex items-center -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
-                                        Features
+                                        <MarkGithubIcon size={24} className="mr-2" />    GitHub
                                     </a>
                                     <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        href="https://www.linkedin.com/in/atishay-khanna/"
+                                        className="flex items-center space-x-2 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
-                                        Marketplace
+                                        <GrLinkedinOption size={24} className="mr-2" />  Linkedin
                                     </a>
                                     <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                        href="/blogs"
+                                        className="flex items-center space-x-2 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
-                                        Company
+                                        <FaBlog size={24} className="mr-2" />    My Personal Blog
                                     </a>
                                 </div>
-                                <div className="py-6">
+                                {/* <div className="py-6">
                                     <a
                                         href="#"
                                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
                                         Log in
                                     </a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </Dialog.Panel>

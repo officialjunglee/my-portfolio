@@ -1,4 +1,4 @@
-
+import img from '/src/assets/mypic.jpg'
 const Introduction = () => {
     return (
         <div className="bg-sky-600 py-8 sm:py-16 lg:py-24">
@@ -7,7 +7,7 @@ const Introduction = () => {
                 <div className="w-1/3 mr-8">
                     <img
                         className="rounded-full object-cover w-full h-auto"
-                        src="/src/assets/mypic.jpg"  // Replace with the URL or path to your photo
+                        src={img}  // Replace with the URL or path to your photo
                         alt="image not found"
                     />
                 </div>
