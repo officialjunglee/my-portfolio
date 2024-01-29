@@ -7,7 +7,6 @@ import cors from "cors";
 import multer from "multer";
 
 const app = express();
-const multer = require('multer');
 
 app.use(express.json());
 
