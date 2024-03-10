@@ -1,7 +1,7 @@
 import img from '/src/assets/mypic.jpg'
 const Introduction = () => {
     return (
-        <div className="bg-sky-600 py-8 sm:py-16 lg:py-24">
+        <div className="mx-auto bg-sky-600 py-8 sm:py-16 lg:py-24">
             <div className="mr-auto max-w-4xl px-6 lg:px-8 flex items-left justify-left">
                 {/* Photo */}
                 <div className="w-1/3 mr-8">
@@ -13,7 +13,7 @@ const Introduction = () => {
                 </div>
 
                 {/* Text */}
-                <div className="w-2/3">
+                <div className="w-2/3 align-items:stretch">
                     <h2 className="text-3xl font-semibold text-cyan-300 mb-4">
                         Welcome to my website, I am Atishay
                     </h2>

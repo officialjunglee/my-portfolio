@@ -14,7 +14,8 @@ import { MarkGithubIcon } from '@primer/octicons-react'
 import { GrLinkedinOption } from "react-icons/gr";
 import { FaBlog } from "react-icons/fa6";
 import { TbCircleLetterA } from "react-icons/tb";
-
+import ResumeDownload from './ResumeDownload'
+import { IoDocument } from "react-icons/io5";
 const products = [
     { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
     { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
@@ -111,9 +112,9 @@ export default function LandingPageBar() {
                         <a href="https://www.linkedin.com/in/atishay-khanna/" className="text-sm  leading-6 text-gray-900 hover:text-slate-600" target="_blank" rel="noreferrer noopener">
                             <GrLinkedinOption size={24} />
                         </a>
-                        <a href="/blogs" className="text-sm font-semibold leading-6 text-gray-900 hover:text-slate-600" >
-                            <FaBlog size={24} />
-                        </a>
+                        <div className='text-sm leading-6 text-gray-900 hover:text-slate-600'>
+                            <ResumeDownload />
+                        </div>
                     </Popover.Group>
                     {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
@@ -182,12 +183,10 @@ export default function LandingPageBar() {
                                     >
                                         <GrLinkedinOption size={24} className="mr-2" />  Linkedin
                                     </a>
-                                    <a
-                                        href="/blogs"
-                                        className="flex items-center space-x-2 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    >
-                                        <FaBlog size={24} className="mr-2" />    My Personal Blog
-                                    </a>
+                                    <div className='flex items-center space-x-2 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'>
+                                        <IoDocument size={24} className="mr-2" ></IoDocument>
+                                        <ResumeDownload />
+                                    </div>
                                 </div>
                                 {/* <div className="py-6">
                                     <a

@@ -11,7 +11,7 @@ export default function TechStack() {
                 <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
                     Familiar with but not limited to these technologies
                 </h2>
-                <div className="mx-auto mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div className="mx-auto mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 animate-pulse">
                     <DiReact size={75} />
                     <FaJava size={75} />
                     <FaPython size={75} />
